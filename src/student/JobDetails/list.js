@@ -1,20 +1,21 @@
-import Job from "./Job"
-export default function jobList({jobList}){
+import JobDetails from "./JobDetails";
+
+export default function List({details}){
     return(
         <>
          {
-            jobList ? jobList.map((j)=>(
-                <Job title={j.title}
+            details ? details.map((j)=>(
+                <JobDetails
+                id={j.id}
+                title={j.title}
                 company={j.company}
                 city={j.city}
                 type={j.type}
                 experience={j.experience}
                 salary={j.salary}
-                pic={j.pic}></Job>
+                pic={j.pic}></JobDetails>
             )): null
         }
-        
-        
         </>
     )
 }

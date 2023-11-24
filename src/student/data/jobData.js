@@ -1,7 +1,7 @@
 const jobData=[
 {
     id:1,
-    title:"Senior MERN Developer",
+    title:"MERN Developer",
     company:'Facebook',
     city:'Islamabad',
     type:'Remote',
